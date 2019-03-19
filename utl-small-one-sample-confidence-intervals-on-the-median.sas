@@ -33,13 +33,20 @@ data have;
     z=rand('normal',5,1);                                                                                                                           
     output;                                                                                                                                         
   end;                                                                                                                                              
-run;quit;                                                                                                                                           
+run;quit;  
+
+HAVE total obs=30
+
+Obs      DATE          Z
+
+  1    18FEB2019    5.86503
+  2    19FEB2019    5.81118
+  3    20FEB2019    3.95564
+  4    21FEB2019    3.94351
+  5    22FEB2019    3.25105
+  6    23FEB2019    5.56657
                                                                                                                                                     
-options ls=64;                                                                                                                                      
-ods graphivs off;                                                                                                                                   
-proc univariate data=have plot normal;                                                                                                              
-run;quit;                                                                                                                                           
-                                                                                                                                                    
+                                                                                                                                  
  *           _               _                                                                                                                      
   ___  _   _| |_ _ __  _   _| |_                                                                                                                    
  / _ \| | | | __| '_ \| | | | __|                                                                                                                   
